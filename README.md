@@ -15,8 +15,14 @@
 
 ## Tarefas
 1. Fork deste repositório 
-2. 
+2. Implementar páginas para:
+   1. Produtos https://dummyjson.com/products?limit=10
+   2. Carrinhos https://dummyjson.com/carts?limit=10
+   3. Publicações https://dummyjson.com/posts?limit=10
+   4. Comentários de publicações  https://dummyjson.com/comments?limit=10
+   5. Tarefas https://dummyjson.com/todos?limit=10
+   6. Quotes https://dummyjson.com/quotes?limit=10
 
-## Desafios
+
 
 
