@@ -11,7 +11,17 @@
 - professor: [Leonardo Ataide Minora](https://github.com/leonardo-minora/)
 
 ## Resumo da tarefa
+Criar uma aplicação com diversas páginas para acessar os diversos recursos de [Dummy Json](https://dummyjson.com/).
+Incialmente em sala foi desenvolvido uma aplicação com a página de lista de usuários.
 
+Estrutura de diretórios:
+- **src** : pasta com código-fonte da aplicação (css, typescript, jsx, etc)
+  - **paginas** : pasta com código-fonte de componentes react que representam uma página
+
+Para executar a aplicação, lembre do `npm i` para somente depois executar `npm run dev`.
+
+## Exemplo de código
+- Página de usuário [zip](https://github.com/infoweb-pos/2023-webapp-08-pratica_de_lab-dummy-01/archive/refs/tags/pagina-inicial.zip)
 
 ## Tarefas
 1. Fork deste repositório 
