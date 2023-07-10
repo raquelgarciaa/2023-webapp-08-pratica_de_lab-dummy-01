@@ -2,7 +2,7 @@
 import './App.css'
 // import axios from 'axios';
 import AppUsuarios from './paginas/PaginaUsuarios';
-
+import PaginaTarefas from './paginas/PaginaTarefas';
 // const api = axios.create({
 //   baseURL: "https://dummyjson.com/",
 // });
@@ -71,6 +71,7 @@ const App = () => {
   return (
     <>
       <AppUsuarios />
+      <PaginaTarefas />
     </>
   );
 }
