@@ -3,6 +3,7 @@ import './App.css'
 // import axios from 'axios';
 import AppUsuarios from './paginas/PaginaUsuarios';
 import PaginaTarefas from './paginas/PaginaTarefas';
+import PaginaTarefaNova from './paginas/PaginaTarefaNova';
 // const api = axios.create({
 //   baseURL: "https://dummyjson.com/",
 // });
@@ -70,6 +71,7 @@ const App = () => {
 
   return (
     <>
+      <PaginaTarefaNova />
       <AppUsuarios />
       <PaginaTarefas />
     </>

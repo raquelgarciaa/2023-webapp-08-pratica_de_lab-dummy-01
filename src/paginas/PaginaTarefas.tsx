@@ -10,6 +10,14 @@ interface propsTarefa{
     titulo: string;
     feito:boolean;
 }
+interface jsonDeRespostaDoGet {
+    todos: [];
+}
+interface jsonTarefa{
+    id: number;
+    todo: string;
+    completed : boolean;
+}
 const TarefaItem = (props:propsTarefa) =>{
     return(
         <div className="card">
@@ -25,7 +33,7 @@ const TarefaItem = (props:propsTarefa) =>{
 const PaginaTarefas = () => {
     const [tarefas, setTarefas] = useState([]);
     useEffect(()=>{
-        api.get('/todos?limit=10')
+        api.get<jsonDeRespostaDoGet>('/todos?limit=10')
         .then( (resposta)=> setTarefas(resposta.data.todos))
         .catch((erro: any) => console.error(erro));
     }, []);
@@ -33,12 +41,12 @@ const PaginaTarefas = () => {
         <>
         <div className="card">
             <h2>Lista de tarefas</h2>
-            {tarefas.map((tarefa)=> (
+            {tarefas.map((tarefa : jsonTarefa)=> (
                 <TarefaItem
-                key={tarefas.id}
-                id={tarefas.id}
-                titulo={tarefas.todo}
-                feito={tarefas.completed} />
+                key={tarefa.id}
+                id={tarefa.id}
+                titulo={tarefa.todo}
+                feito={tarefa.completed} />
             ))}
         </div>
         </>
